@@ -189,10 +189,11 @@ AlborzShopCenter/orleans.codegen.cs
 
 AlborzShopCenter/ClientApp/node_modules
 AlborzShopCenter/ClientApp/.env
-AlborzShopCenter/ClientApp/public
-!AlborzShopCenter/ClientApp/public/index.html
-!AlborzShopCenter/ClientApp/public/Images/Icon
-!AlborzShopCenter/ClientApp/public/Reports
+AlborzShopCenter/ClientApp/public/File
+AlborzShopCenter/ClientApp/public/Images/Advertising
+AlborzShopCenter/ClientApp/public/Images/Products
+AlborzShopCenter/ClientApp/public/*.ico
+AlborzShopCenter/ClientApp/public/*.json
 AlborzShopCenter/ClientApp/build
 
 Data/
