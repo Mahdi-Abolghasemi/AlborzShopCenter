@@ -1,0 +1,1913 @@
+/* Provide sufficient contrast against white background */
+@import "@grapecity/activereports/styles/ar-js-ui.css";
+@import "@grapecity/activereports/styles/ar-js-viewer.css";
+
+/* for Extra small (xs: < 576px)*/
+@media (max-width: 576px) {
+  html {
+    font-size: 8px;
+  }
+
+  #viewer-host {
+    width: 100%;
+    height: 100vh;
+  }
+
+  a {
+    color: #0366d6;
+  }
+
+  code {
+    color: #E01A76;
+  }
+
+  .bodyApp {
+    background-color: #f8f9fa;
+    /* background-color: #ebf1f8;
+    background-color: #dfe2e4; */
+    /* background-color: #E01A76; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .btn-listItem {
+    width: 15px;
+    height: 15px;
+    font-size: 10px;
+    text-align: center;
+    background-color: red;
+    color: white;
+    display: inline-block;
+    margin: 0 0 0 0.5em;
+    cursor: pointer;
+  }
+
+  .label-circle {
+    /* width: 40px;
+    height: 40px; */
+    width: 25px;
+    height: 25px;
+    padding: 5px 6px;
+    border-radius: 60px;
+    font-size: 8px;
+    text-align: center;
+    display: inline-block;
+    margin: 0 0 0 0.5em;
+    cursor: pointer;
+  }
+
+  .label-circle-without-cursor {
+    /* width: 30px;
+    height: 30px;*/
+    width: 20px;
+    height: 20px;
+    padding: 5px 6px;
+    border-radius: 60px;
+    font-size: 8px;
+    text-align: center;
+    display: inline-block;
+    margin: 0 0 0 0.5em;
+  }
+
+  .img-fluid {
+    height: 100px !important;
+    width: 100px !important;
+  }
+
+  .image {
+    position: relative;
+    display: inline-block;
+  }
+
+  .overlay {
+    position: absolute;
+    right: 0;
+    padding-right: 2%;
+    z-index: 5;
+  }
+
+  .autocomplete-wrapper {
+    position: relative;
+    width: 90%;
+  }
+
+  .suggestions-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    border: 1px solid #c2c0c0;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 100;
+  }
+
+  .suggestions-list li {
+    padding: 8px;
+    cursor: pointer;
+  }
+
+  .suggestions-list li:hover {
+    background-color: #cccfd1;
+  }
+
+  .adverCategories-div {
+    /* width: 100%; */
+    padding-top: 5%;
+    /* padding-left: 5%;
+    padding-right: 5%; */
+    padding-bottom: 5%;
+  }
+
+  .adverDetails-div {
+    width: 100%;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .public-card {
+    background-color: white;
+    border: none;
+    width: auto;
+    /* width: 100%; */
+    /* width: 20rem; */
+  }
+
+  .col-height {
+    height: auto;
+  }
+
+  .changeToHightSize {
+    display: none;
+  }
+
+  .changeToLowSize {
+    display: block;
+  }
+
+  .footer-div {
+    background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+  }
+
+  .padding-table {
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+
+  .paddingCart-table {
+    padding-top: 5%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 5%;
+  }
+
+  .table-header {
+    background-color: #0dcaf0;
+    color: white;
+  }
+
+  .table-title {
+    background-color: #757575;
+    color: white;
+  }
+
+  .add-div {
+    padding-bottom: 3%;
+  }
+
+  .page-input {
+    background-color: #607D8B;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+
+  .card-input {
+    height: 80%;
+    width: 80%;
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .cardH {
+    background-color: white;
+  }
+
+  .cardF {
+    background-color: white;
+    border-top: white;
+  }
+
+  .product-div {
+    width: 100%;
+    padding-top: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 3%;
+  }
+
+  .footer-content {
+    padding-top: 3%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 3%;
+  }
+
+  .footer-body {
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .accordion {
+    font-size: 17px;
+    margin: 0 20px;
+  }
+
+  .accordion__button {
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: inherit;
+  }
+
+  .accordion__button span {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+  }
+
+  .accordion__button:focus {
+    outline: none;
+  }
+
+  .accordion__content {
+    padding: 0 20px;
+    opacity: 0;
+    transition: all .5s;
+    height: 0;
+    margin: 0;
+    margin-top: -10px;
+    border: 1px solid #f1f1f1;
+    border-top: 0;
+  }
+
+  .accordion__content.active {
+    height: auto;
+    opacity: 1;
+    padding: 20px;
+    background-color: white;
+  }
+
+  .detail-div {
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+  }
+
+  .cart-section {
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  .cart-div {
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    border-radius: 10px;
+    background-color: white;
+  }
+
+  .label-circle-notification {
+    width: 40px;
+    height: 40px;
+    padding: 9px 9px;
+    border-radius: 60px;
+    font-size: 14px;
+    text-align: center;
+    display: inline-block;
+    margin: 0 0 0 0.5em;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+    border: 1px solid #e7e4e4;
+  }
+
+  .label-circle-notification .badge {
+    position: absolute;
+    top: -5px;
+    right: -7px;
+    padding: 5px 7px;
+    border-radius: 60%;
+    background: red;
+    color: white;
+  }
+
+  .button-notification {
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+  }
+
+  .button-notification .badge {
+    position: absolute;
+    top: -12px;
+    right: -9px;
+    padding: 5px 7px;
+    border-radius: 60%;
+    background: red;
+    color: white;
+  }
+
+  .carousel-caption-lrc {
+    top: 40%;
+  }
+
+  .carousel-caption-t {
+    top: 5%;
+  }
+
+  .carousel-caption-b {
+    bottom: 5%;
+  }
+
+  .tag-lrc {
+    top: 10%;
+  }
+
+  .tag-t {
+    top: 5%;
+  }
+
+  .tag-b {
+    bottom: 5%;
+  }
+
+  .label-circle-tag {
+    width: 70px;
+    height: 70px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 90px;
+    outline: dashed;
+    outline-offset: -3px;
+    align-content: center;
+    display: inline-block;
+  }
+
+  .carousel-indicators {
+    bottom: -30px;
+  }
+
+  .carousel-indicators li {
+    background-color: black;
+  }
+
+  .show-WhatsApp{
+    position: absolute;
+    z-index: 1;
+  }
+}
+
+
+/* for Small (sm: ≥ 576px and < 768px)*/
+@media (min-width: 576px) and (max-width: 768px) {
+  html {
+    font-size: 10px;
+  }
+
+  #viewer-host {
+    width: 100%;
+    height: 100vh;
+  }
+
+  a {
+    color: #0366d6;
+  }
+
+  code {
+    color: #E01A76;
+  }
+
+  .bodyApp {
+    background-color: #f8f9fa;
+    /* background-color: #ebf1f8; */
+    /* background-color: #dfe2e4; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .btn-listItem {
+    width: 15px;
+    height: 15px;
+    font-size: 10px;
+    text-align: center;
+    background-color: red;
+    color: white;
+    display: inline-block;
+    margin: 0 0 0 0.5em;
+    cursor: pointer;
+  }
+
+  .label-circle {
+    /* width: 40px;
+    height: 40px; */
+    width: 30px;
+    height: 30px;
+    padding: 5px 6px;
+    border-radius: 60px;
+    font-size: 8px;
+    text-align: center;
+    display: inline-block;
+    margin: 0 0 0 0.5em;
+    cursor: pointer;
+  }
+
+  .label-circle-without-cursor {
+    /* width: 30px;
+    height: 30px; */
+    width: 25px;
+    height: 25px;
+    padding: 5px 6px;
+    border-radius: 60px;
+    font-size: 8px;
+    text-align: center;
+    display: inline-block;
+    margin: 0 0 0 0.5em;
+  }
+
+  .img-fluid {
+    height: 100px !important;
+    width: 100px !important;
+  }
+
+  .image {
+    position: relative;
+    display: inline-block;
+  }
+
+  .overlay {
+    position: absolute;
+    right: 0;
+    padding-right: 2%;
+    z-index: 5;
+  }
+
+  .autocomplete-wrapper {
+    position: relative;
+    width: 90%;
+  }
+
+  .suggestions-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    border: 1px solid #c2c0c0;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 100;
+  }
+
+  .suggestions-list li {
+    padding: 8px;
+    cursor: pointer;
+  }
+
+  .suggestions-list li:hover {
+    background-color: #cccfd1;
+  }
+
+  .adverCategories-div {
+    /* width: 100%; */
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+  }
+
+  .adverDetails-div {
+    width: 100%;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .public-card {
+    background-color: white;
+    border: none;
+    /* width: 20rem; */
+  }
+
+  .col-height {
+    height: 25rem;
+  }
+
+  .changeToHightSize {
+    display: none;
+  }
+
+  .changeToLowSize {
+    display: block;
+  }
+
+  .footer-div {
+    background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+  }
+
+  .padding-table {
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+
+  .paddingCart-table {
+    padding-top: 5%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 5%;
+  }
+
+  .table-header {
+    background-color: #0dcaf0;
+    color: white;
+  }
+
+  .table-title {
+    background-color: #757575;
+    color: white;
+  }
+
+  .add-div {
+    padding-bottom: 3%;
+  }
+
+  .page-input {
+    background-color: #607D8B;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+
+  .card-input {
+    height: 80%;
+    width: 80%;
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .cardH {
+    background-color: white;
+  }
+
+  .cardF {
+    background-color: white;
+    border-top: white;
+  }
+
+  .product-div {
+    width: 100%;
+    padding-top: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 3%;
+  }
+
+  .footer-content {
+    padding-top: 3%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 3%;
+  }
+
+  .footer-body {
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .accordion {
+    font-size: 17px;
+    margin: 0 20px;
+  }
+
+  .accordion__button {
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: inherit;
+  }
+
+  .accordion__button span {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+  }
+
+  .accordion__button:focus {
+    outline: none;
+  }
+
+  .accordion__content {
+    padding: 0 20px;
+    opacity: 0;
+    transition: all .5s;
+    height: 0;
+    margin: 0;
+    margin-top: -10px;
+    border: 1px solid #f1f1f1;
+    border-top: 0;
+  }
+
+  .accordion__content.active {
+    height: auto;
+    opacity: 1;
+    padding: 20px;
+    background-color: white;
+  }
+
+  .detail-div {
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+  }
+
+  .cart-section {
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  .cart-div {
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    border-radius: 10px;
+    background-color: white;
+  }
+
+  .label-circle-notification {
+    width: 40px;
+    height: 40px;
+    padding: 9px 9px;
+    border-radius: 60px;
+    font-size: 14px;
+    text-align: center;
+    display: inline-block;
+    margin: 0 0 0 0.5em;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+    border: 1px solid #e7e4e4;
+  }
+
+  .label-circle-notification .badge {
+    position: absolute;
+    top: -5px;
+    right: -7px;
+    padding: 5px 7px;
+    border-radius: 60%;
+    background: red;
+    color: white;
+  }
+
+  .button-notification {
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+  }
+
+  .button-notification .badge {
+    position: absolute;
+    top: -12px;
+    right: -9px;
+    padding: 5px 7px;
+    border-radius: 60%;
+    background: red;
+    color: white;
+  }
+
+  .carousel-caption-lrc {
+    top: 40%;
+  }
+
+  .carousel-caption-t {
+    top: 5%;
+  }
+
+  .carousel-caption-b {
+    bottom: 5%;
+  }
+
+  .tag-lrc {
+    top: 15%;
+  }
+
+  .tag-t {
+    top: 5%;
+  }
+
+  .tag-b {
+    bottom: 5%;
+  }
+
+  .label-circle-tag {
+    width: 80px;
+    height: 80px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 90px;
+    outline: dashed;
+    outline-offset: -3px;
+    align-content: center;
+    display: inline-block;
+  }
+
+  .carousel-indicators {
+    bottom: -40px;
+  }
+
+  .carousel-indicators li {
+    background-color: black;
+  }
+
+  .show-WhatsApp{
+    position: absolute;
+    z-index: 1;
+  }
+}
+
+
+/* for Medium (md: ≥ 768px and < 992px)*/
+@media (min-width: 768px) and (max-width:992px) {
+  html {
+    font-size: 14px;
+  }
+
+  #viewer-host {
+    width: 100%;
+    height: 100vh;
+  }
+
+  a {
+    color: #0366d6;
+  }
+
+  code {
+    color: #E01A76;
+  }
+
+  .bodyApp {
+    background-color: #f8f9fa;
+    /* background-color: #ebf1f8; */
+    /* background-color: #dfe2e4; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .btn-listItem {
+    width: 15px;
+    height: 15px;
+    font-size: 10px;
+    text-align: center;
+    background-color: red;
+    color: white;
+    display: inline-block;
+    margin: 0 0 0 0.5em;
+    cursor: pointer;
+  }
+
+  .label-circle {
+    width: 40px;
+    height: 40px;
+    padding: 5px 6px;
+    border-radius: 60px;
+    font-size: 8px;
+    text-align: center;
+    display: inline-block;
+    margin: 0 0 0 0.5em;
+    cursor: pointer;
+  }
+
+  .label-circle-without-cursor {
+    width: 30px;
+    height: 30px;
+    padding: 5px 6px;
+    border-radius: 60px;
+    font-size: 8px;
+    text-align: center;
+    display: inline-block;
+    margin: 0 0 0 0.5em;
+  }
+
+  .img-fluid {
+    height: 100px !important;
+    width: 100px !important;
+  }
+
+  .image {
+    position: relative;
+    display: inline-block;
+  }
+
+  .overlay {
+    position: absolute;
+    right: 0;
+    padding-right: 2%;
+    z-index: 5;
+  }
+
+  .autocomplete-wrapper {
+    position: relative;
+    width: 90%;
+  }
+
+  .suggestions-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    border: 1px solid #c2c0c0;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 100;
+  }
+
+  .suggestions-list li {
+    padding: 8px;
+    cursor: pointer;
+  }
+
+  .suggestions-list li:hover {
+    background-color: #cccfd1;
+  }
+
+  .adverCategories-div {
+    /* width: 100%; */
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+  }
+
+  .adverDetails-div {
+    width: 100%;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .public-card {
+    background-color: white;
+    border: none;
+    /* width: 20rem; */
+  }
+
+  .col-height {
+    height: 15rem;
+  }
+
+  .changeToHightSize {
+    display: block;
+  }
+
+  .changeToLowSize {
+    display: none;
+  }
+
+  .footer-div {
+    background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+  }
+
+  .padding-table {
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+
+  .paddingCart-table {
+    padding-top: 5%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 5%;
+  }
+
+  .table-header {
+    background-color: #0dcaf0;
+    color: white;
+  }
+
+  .table-title {
+    background-color: #757575;
+    color: white;
+  }
+
+  .add-div {
+    padding-bottom: 3%;
+  }
+
+  .page-input {
+    background-color: #607D8B;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+
+  .card-input {
+    height: 80%;
+    width: 80%;
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .cardH {
+    background-color: white;
+  }
+
+  .cardF {
+    background-color: white;
+    border-top: white;
+  }
+
+  .product-div {
+    width: 100%;
+    padding-top: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 3%;
+  }
+
+  .footer-content {
+    padding-top: 3%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 3%;
+  }
+
+  .footer-body {
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .accordion {
+    font-size: 17px;
+    margin: 0 20px;
+  }
+
+  .accordion__button {
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: inherit;
+  }
+
+  .accordion__button span {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+  }
+
+  .accordion__button:focus {
+    outline: none;
+  }
+
+  .accordion__content {
+    padding: 0 20px;
+    opacity: 0;
+    transition: all .5s;
+    height: 0;
+    margin: 0;
+    margin-top: -10px;
+    border: 1px solid #f1f1f1;
+    border-top: 0;
+  }
+
+  .accordion__content.active {
+    height: auto;
+    opacity: 1;
+    padding: 20px;
+    background-color: white;
+  }
+
+  .detail-div {
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+  }
+
+  .cart-section {
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  .cart-div {
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    border-radius: 10px;
+    background-color: white;
+  }
+
+  .label-circle-notification {
+    width: 40px;
+    height: 40px;
+    padding: 9px 9px;
+    border-radius: 60px;
+    font-size: 14px;
+    text-align: center;
+    display: inline-block;
+    margin: 0 0 0 0.5em;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+    border: 1px solid #e7e4e4;
+  }
+
+  .label-circle-notification .badge {
+    position: absolute;
+    top: -5px;
+    right: -7px;
+    padding: 5px 7px;
+    border-radius: 60%;
+    background: red;
+    color: white;
+  }
+
+  .button-notification {
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+  }
+
+  .button-notification .badge {
+    position: absolute;
+    top: -12px;
+    right: -9px;
+    padding: 5px 7px;
+    border-radius: 60%;
+    background: red;
+    color: white;
+  }
+
+  .carousel-caption-lrc {
+    top: 40%;
+  }
+
+  .carousel-caption-t {
+    top: 5%;
+  }
+
+  .carousel-caption-b {
+    bottom: 5%;
+  }
+
+  .tag-lrc {
+    top: 20%;
+  }
+
+  .tag-t {
+    top: 5%;
+  }
+
+  .tag-b {
+    bottom: 5%;
+  }
+
+  .label-circle-tag {
+    width: 100px;
+    height: 100px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 90px;
+    outline: dashed;
+    outline-offset: -4px;
+    align-content: center;
+    display: inline-block;
+  }
+
+  .carousel-indicators {
+    bottom: -50px;
+  }
+
+  .carousel-indicators li {
+    background-color: black;
+  }
+
+  .show-WhatsApp{
+    position: absolute;
+    z-index: 1;
+  }
+}
+
+
+/* for Large (lg: ≥ 992px and < 1200px)*/
+@media (min-width:992px) and (max-width: 1200px) {
+  html {
+    font-size: 14px;
+  }
+
+  #viewer-host {
+    width: 100%;
+    height: 100vh;
+  }
+
+  a {
+    color: #0366d6;
+  }
+
+  code {
+    color: #E01A76;
+  }
+
+  .bodyApp {
+    background-color: #f8f9fa;
+    /* background-color: #ebf1f8; */
+    /* background-color: #dfe2e4; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .btn-listItem {
+    width: 15px;
+    height: 15px;
+    font-size: 10px;
+    text-align: center;
+    background-color: red;
+    color: white;
+    display: inline-block;
+    margin: 0 0 0 0.5em;
+    cursor: pointer;
+  }
+
+  .label-circle {
+    width: 40px;
+    height: 40px;
+    padding: 5px 6px;
+    border-radius: 60px;
+    font-size: 8px;
+    text-align: center;
+    display: inline-block;
+    margin: 0 0 0 0.5em;
+    cursor: pointer;
+  }
+
+  .label-circle-without-cursor {
+    width: 30px;
+    height: 30px;
+    padding: 5px 6px;
+    border-radius: 60px;
+    font-size: 8px;
+    text-align: center;
+    display: inline-block;
+    margin: 0 0 0 0.5em;
+  }
+
+  .img-fluid {
+    height: 100px !important;
+    width: 100px !important;
+  }
+
+  .image {
+    position: relative;
+    display: inline-block;
+  }
+
+  .overlay {
+    position: absolute;
+    right: 0;
+    padding-right: 2%;
+    z-index: 5;
+  }
+
+  .autocomplete-wrapper {
+    position: relative;
+    width: 90%;
+  }
+
+  .suggestions-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    border: 1px solid #c2c0c0;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 100;
+  }
+
+  .suggestions-list li {
+    padding: 8px;
+    cursor: pointer;
+  }
+
+  .suggestions-list li:hover {
+    background-color: #cccfd1;
+  }
+
+  .adverCategories-div {
+    /* width: 100%; */
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+  }
+
+  .adverDetails-div {
+    width: 100%;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .public-card {
+    background-color: white;
+    border: none;
+    /* width: 20rem; */
+  }
+
+  .col-height {
+    height: 15rem;
+  }
+
+  .changeToHightSize {
+    display: block;
+  }
+
+  .changeToLowSize {
+    display: none;
+  }
+
+  .footer-div {
+    background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+  }
+
+  .padding-table {
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+
+  .paddingCart-table {
+    padding-top: 5%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 5%;
+  }
+
+  .table-header {
+    background-color: #0dcaf0;
+    color: white;
+  }
+
+  .table-title {
+    background-color: #757575;
+    color: white;
+  }
+
+  .add-div {
+    padding-bottom: 3%;
+  }
+
+  .page-input {
+    background-color: #607D8B;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+
+  .card-input {
+    height: 80%;
+    width: 80%;
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .cardH {
+    background-color: white;
+  }
+
+  .cardF {
+    background-color: white;
+    border-top: white;
+  }
+
+  .product-div {
+    width: 100%;
+    padding-top: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 3%;
+  }
+
+  .footer-content {
+    padding-top: 3%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 3%;
+  }
+
+  .footer-body {
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .accordion {
+    font-size: 17px;
+    margin: 0 20px;
+  }
+
+  .accordion__button {
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: inherit;
+  }
+
+  .accordion__button span {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+  }
+
+  .accordion__button:focus {
+    outline: none;
+  }
+
+  .accordion__content {
+    padding: 0 20px;
+    opacity: 0;
+    transition: all .5s;
+    height: 0;
+    margin: 0;
+    margin-top: -10px;
+    border: 1px solid #f1f1f1;
+    border-top: 0;
+  }
+
+  .accordion__content.active {
+    height: auto;
+    opacity: 1;
+    padding: 20px;
+    background-color: white;
+  }
+
+  .detail-div {
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+  }
+
+  .cart-section {
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  .cart-div {
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    border-radius: 10px;
+    background-color: white;
+  }
+
+  .label-circle-notification {
+    width: 40px;
+    height: 40px;
+    padding: 9px 9px;
+    border-radius: 60px;
+    font-size: 14px;
+    text-align: center;
+    display: inline-block;
+    margin: 0 0 0 0.5em;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+    border: 1px solid #e7e4e4;
+  }
+
+  .label-circle-notification .badge {
+    position: absolute;
+    top: -5px;
+    right: -7px;
+    padding: 5px 7px;
+    border-radius: 60%;
+    background: red;
+    color: white;
+  }
+
+  .button-notification {
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+  }
+
+  .button-notification .badge {
+    position: absolute;
+    top: -12px;
+    right: -9px;
+    padding: 5px 7px;
+    border-radius: 60%;
+    background: red;
+    color: white;
+  }
+
+  .carousel-caption-lrc {
+    top: 40%;
+  }
+
+  .carousel-caption-t {
+    top: 5%;
+  }
+
+  .carousel-caption-b {
+    bottom: 5%;
+  }
+
+  .tag-lrc {
+    top: 20%;
+  }
+
+  .tag-t {
+    top: 5%;
+  }
+
+  .tag-b {
+    bottom: 5%;
+  }
+
+  .label-circle-tag {
+    width: 120px;
+    height: 120px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 90px;
+    outline: dashed;
+    outline-offset: -6px;
+    align-content: center;
+    display: inline-block;
+  }
+
+  .carousel-indicators {
+    bottom: -50px;
+  }
+
+  .carousel-indicators li {
+    background-color: black;
+  }
+
+  .show-WhatsApp{
+    position: absolute;
+    z-index: 1;
+  }
+}
+
+
+/* for Extra large (xl: ≥ 1200px)*/
+@media (min-width: 1200px) {
+  html {
+    font-size: 16px;
+  }
+
+  #viewer-host {
+    width: 100%;
+    height: 100vh;
+  }
+
+  a {
+    color: #0366d6;
+  }
+
+  code {
+    color: #E01A76;
+  }
+
+  .bodyApp {
+    background-color: #f8f9fa;
+    /* background-color: #ebf1f8; */
+    /* background-color: #dfe2e4; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .btn-listItem {
+    width: 15px;
+    height: 15px;
+    font-size: 10px;
+    text-align: center;
+    background-color: red;
+    color: white;
+    display: inline-block;
+    margin: 0 0 0 0.5em;
+    cursor: pointer;
+  }
+
+  .label-circle {
+    width: 40px;
+    height: 40px;
+    padding: 5px 6px;
+    border-radius: 60px;
+    font-size: 8px;
+    text-align: center;
+    display: inline-block;
+    margin: 0 0 0 0.5em;
+    cursor: pointer;
+  }
+
+  .label-circle-without-cursor {
+    width: 30px;
+    height: 30px;
+    padding: 5px 6px;
+    border-radius: 60px;
+    font-size: 8px;
+    text-align: center;
+    display: inline-block;
+    margin: 0 0 0 0.5em;
+  }
+
+  .img-fluid {
+    height: 100px !important;
+    width: 100px !important;
+  }
+
+  .image {
+    position: relative;
+    display: inline-block;
+  }
+
+  .overlay {
+    position: absolute;
+    right: 0;
+    padding-right: 2%;
+    z-index: 5;
+  }
+
+  .autocomplete-wrapper {
+    position: relative;
+    width: 90%;
+  }
+
+  .suggestions-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    border: 1px solid #c2c0c0;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 100;
+  }
+
+  .suggestions-list li {
+    padding: 8px;
+    cursor: pointer;
+  }
+
+  .suggestions-list li:hover {
+    background-color: #cccfd1;
+  }
+
+  .adverCategories-div {
+    /* width: 100%; */
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+  }
+
+  .adverDetails-div {
+    width: 100%;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .public-card {
+    background-color: white;
+    border: none;
+    /* width: 20rem; */
+  }
+
+  .col-height {
+    height: 15rem;
+  }
+
+  .changeToHightSize {
+    display: block;
+  }
+
+  .changeToLowSize {
+    display: none;
+  }
+
+  .footer-div {
+    background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+  }
+
+  .padding-table {
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+
+  .paddingCart-table {
+    padding-top: 5%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 5%;
+  }
+
+  .table-header {
+    background-color: #0dcaf0;
+    color: white;
+  }
+
+  .table-title {
+    background-color: #757575;
+    color: white;
+  }
+
+  .add-div {
+    padding-bottom: 3%;
+  }
+
+  .page-input {
+    background-color: #607D8B;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+
+  .card-input {
+    height: 80%;
+    width: 80%;
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .cardH {
+    background-color: white;
+  }
+
+  .cardF {
+    background-color: white;
+    border-top: white;
+  }
+
+  .product-div {
+    width: 100%;
+    padding-top: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 3%;
+  }
+
+  .footer-content {
+    padding-top: 3%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 3%;
+  }
+
+  .footer-body {
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .accordion {
+    font-size: 17px;
+    margin: 0 20px;
+  }
+
+  .accordion__button {
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: inherit;
+  }
+
+  .accordion__button span {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+  }
+
+  .accordion__button:focus {
+    outline: none;
+  }
+
+  .accordion__content {
+    padding: 0 20px;
+    opacity: 0;
+    transition: all .5s;
+    height: 0;
+    margin: 0;
+    margin-top: -10px;
+    border: 1px solid #f1f1f1;
+    border-top: 0;
+  }
+
+  .accordion__content.active {
+    height: auto;
+    opacity: 1;
+    padding: 20px;
+    background-color: white;
+  }
+
+  .detail-div {
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+  }
+
+  .cart-section {
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  .cart-div {
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    border-radius: 10px;
+    background-color: white;
+  }
+
+  .label-circle-notification {
+    width: 40px;
+    height: 40px;
+    padding: 9px 9px;
+    border-radius: 60px;
+    font-size: 14px;
+    text-align: center;
+    display: inline-block;
+    margin: 0 0 0 0.5em;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+    border: 1px solid #e7e4e4;
+  }
+
+  .label-circle-notification .badge {
+    position: absolute;
+    top: -5px;
+    right: -7px;
+    padding: 5px 7px;
+    border-radius: 60%;
+    background: red;
+    color: white;
+  }
+
+  .button-notification {
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+  }
+
+  .button-notification .badge {
+    position: absolute;
+    top: -12px;
+    right: -9px;
+    padding: 5px 7px;
+    border-radius: 60%;
+    background: red;
+    color: white;
+  }
+
+  .carousel-caption-lrc {
+    top: 40%;
+  }
+
+  .carousel-caption-t {
+    top: 15%;
+  }
+
+  .carousel-caption-b {
+    bottom: 15%;
+  }
+
+  .tag-lrc {
+    top: 20%;
+  }
+
+  .tag-t {
+    top: 5%;
+  }
+
+  .tag-b {
+    bottom: 5%;
+  }
+
+  .label-circle-tag {
+    width: 140px;
+    height: 140px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 90px;
+    outline: dashed;
+    outline-offset: -7px;
+    align-content: center;
+    display: inline-block;
+  }
+
+  .carousel-indicators {
+    bottom: -50px;
+  }
+
+  .carousel-indicators li {
+    background-color: black;
+  }
+
+  .show-WhatsApp{
+    position: absolute;
+    z-index: 1;
+  }
+}

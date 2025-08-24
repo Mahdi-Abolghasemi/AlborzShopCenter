@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>H:\.Net\Project\AlborzShopCenter\AlborzShopCenter\bin\Debug\net5.0\publish\</_PublishTargetUrl>
+    <History>True|2024-12-01T08:54:07.1973744Z;True|2024-11-28T00:00:21.2541457+03:30;True|2024-11-27T08:05:48.7567508+03:30;True|2024-11-02T18:24:01.4835874+03:30;True|2024-10-30T23:17:46.8091911+03:30;True|2024-10-30T17:58:07.5409039+03:30;True|2024-10-30T13:09:44.3158474+03:30;True|2024-10-13T22:44:03.7897879+03:30;True|2024-08-28T17:37:12.7816822+03:30;True|2024-08-24T17:41:12.5738161+03:30;True|2024-08-24T14:06:04.4100334+03:30;False|2024-08-24T12:43:44.9331661+03:30;True|2024-02-10T23:15:42.2501975+03:30;True|2023-10-09T11:48:12.3741925+03:30;True|2023-08-02T19:44:42.4421415+03:30;True|2023-01-29T13:44:33.5293477+03:30;True|2023-01-29T10:38:01.6384054+03:30;False|2023-01-29T10:33:00.2772393+03:30;True|2023-01-28T23:10:42.7917744+03:30;True|2023-01-28T21:37:57.1630798+03:30;True|2023-01-27T22:41:28.2112657+03:30;True|2023-01-27T18:21:12.0148330+03:30;True|2023-01-26T19:17:11.4465889+03:30;True|2023-01-26T19:09:46.7656140+03:30;True|2023-01-26T16:08:23.0928991+03:30;True|2023-01-23T19:51:45.6990082+03:30;True|2023-01-22T17:06:14.0691769+03:30;True|2023-01-22T16:58:15.6575222+03:30;False|2023-01-22T14:13:47.3691593+03:30;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Server=localhost%3bDatabase=AlborzShopCenter%3bUser Id=sa%3bPassword=1%3bIntegrated Security=False%3bMultipleActiveResultSets=True</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

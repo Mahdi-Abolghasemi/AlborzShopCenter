@@ -1,0 +1,417 @@
+﻿/* for Extra small (xs: < 576px)*/
+@media (max-width: 576px) {
+  html {
+    font-size: 8px;
+  }
+
+  .header{
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style:normal
+  }
+  
+  a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+  }
+  
+  .notification {
+    background-color:white;
+    color: white;
+    text-decoration: none;
+    padding: 4px 4px;
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #e7e4e4;
+  }
+  
+  .notification .badge {
+    position: absolute;
+    top: -3px;
+    right: -5px;
+    padding: 3px 4px;
+    border-radius: 50%;
+    background:#fab633;
+    color: white;
+  }
+  
+  .navMenu{
+    background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+  }
+  
+  .menu-dropdown{
+    background: transparent;
+  }
+  
+  .menu-dropdown :last-child {
+    background-color:black
+    }
+  
+    .menu-dropdown :last-child a:hover{
+    background: #fab633;
+    }
+  
+   .allMenu{
+      background: transparent;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-style: normal;
+
+      list-style: none inside;
+      text-align: center;
+    }
+  
+     .allMenu :last-child{
+      background-color:black;
+    }
+  
+    .subMenu :first-child:hover {
+      background: #fab633;
+    } 
+
+    .iconSize{
+      font-size: small;
+    }
+}
+
+/* for Small (sm: ≥ 576px and < 768px)*/
+@media (min-width: 576px) and (max-width: 768px) {
+  html {
+    font-size: 10px;
+  }
+
+  .header{
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style:normal
+  }
+  
+  a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+  }
+  
+  .notification {
+    background-color:white;
+    color: white;
+    text-decoration: none;
+    padding: 5px 5px;
+    position: relative;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 60px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #e7e4e4;
+  }
+  
+  .notification .badge {
+    position: absolute;
+    top: -3px;
+    right: -5px;
+    padding: 3px 4px;
+    border-radius: 70%;
+    background:#fab633;
+    color: white;
+  }
+  
+  .navMenu{
+    background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+  }
+  
+  .menu-dropdown{
+    background: transparent;
+  }
+  
+  .menu-dropdown :last-child {
+    background-color:black
+    }
+  
+    .menu-dropdown :last-child a:hover{
+    background: #fab633;
+    }
+  
+   .allMenu{
+      background: transparent;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-style: normal;
+  
+      list-style: none inside;
+      text-align: center;
+    }
+  
+     .allMenu :last-child{
+      background-color:black;
+    }
+  
+    .subMenu :first-child:hover {
+      background: #fab633;
+    } 
+
+    .iconSize{
+      font-size: large;
+    }
+}
+
+
+/* for Medium (md: ≥ 768px and < 992px)*/
+@media (min-width: 768px) and (max-width:992px) {
+  html {
+    font-size: 14px;
+  }
+
+.header{
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style:normal
+}
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+.notification {
+  background-color:white;
+  color: white;
+  text-decoration: none;
+  padding: 9px 9px;
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 60px;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid #e7e4e4;
+}
+
+.notification .badge {
+  position: absolute;
+  top: -5px;
+  right: -7px;
+  padding: 5px 7px;
+  border-radius: 60%;
+  /* background:#fab633; */
+  background:#fab633;
+  color: white;
+}
+
+.navMenu{
+  background-color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: normal;
+}
+
+.menu-dropdown{
+  background: transparent;
+}
+
+.menu-dropdown :last-child {
+  background-color:black
+  }
+
+  .menu-dropdown :last-child a:hover{
+  background: #fab633;
+  }
+
+ .allMenu{
+    background: transparent;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+
+    list-style: none inside;
+    text-align: center;
+  }
+
+   .allMenu :last-child{
+    background-color:black;
+  }
+
+  .subMenu :first-child:hover {
+    background: #fab633;
+  } 
+
+  .iconSize{
+    font-size: xx-large;
+  }
+}
+
+/* for Large (lg: ≥ 992px and < 1200px)*/
+@media (min-width:992px) and (max-width: 1200px) {
+  html {
+    font-size: 14px;
+  }
+
+  .header{
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style:normal
+  }
+  
+  a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+  }
+  
+  .notification {
+    background-color:white;
+    color: white;
+    text-decoration: none;
+    padding: 9px 9px;
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 60px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #e7e4e4;
+  }
+  
+  .notification .badge {
+    position: absolute;
+    top: -5px;
+    right: -7px;
+    padding: 5px 7px;
+    border-radius: 60%;
+    /* background:#fab633; */
+    background:#fab633;
+    color: white;
+  }
+  
+  .navMenu{
+    background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+  }
+  
+  .menu-dropdown{
+    background: transparent;
+  }
+  
+  .menu-dropdown :last-child {
+    background-color:black
+    }
+  
+    .menu-dropdown :last-child a:hover{
+    background: #fab633;
+    }
+  
+   .allMenu{
+      background: transparent;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-style: normal;
+  
+      list-style: none inside;
+      text-align: center;
+    }
+  
+     .allMenu :last-child{
+      background-color:black;
+    }
+  
+    .subMenu :first-child:hover {
+      background: #fab633;
+    } 
+
+    .iconSize{
+      font-size: 30px;
+    }
+}
+
+/* for Extra large (xl: ≥ 1200px)*/
+@media (min-width: 1200px) {
+  html {
+    font-size: 16px;
+  }
+
+  .header{
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style:normal;
+  }
+  
+  a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+  }
+  
+  .notification {
+    background-color:white;
+    color: white;
+    text-decoration: none;
+    padding: 9px 9px;
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 60px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #e7e4e4;
+  }
+  
+  .notification .badge {
+    position: absolute;
+    top: -5px;
+    right: -7px;
+    padding: 5px 7px;
+    border-radius: 60%;
+    background:#fab633;
+    color: white;
+  }
+  
+  .navMenu{
+    background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+  }
+  
+  .menu-dropdown{
+    background: transparent;
+  }
+  
+  .menu-dropdown :last-child {
+    background-color:black
+    }
+  
+    .menu-dropdown :last-child a:hover{
+    background: #fab633;
+    }
+  
+   .allMenu{
+      background: transparent;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-style: normal;
+  
+      list-style: none inside;
+      text-align: center;
+    }
+  
+     .allMenu :last-child{
+      background-color:black;
+    }
+  
+    .subMenu :first-child:hover {
+      background: #fab633;
+    } 
+
+    .iconSize{
+      font-size: 30px;
+    }
+}
